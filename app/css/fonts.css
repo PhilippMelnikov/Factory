@@ -1,0 +1,41 @@
+
+@font-face { 
+  font-family: 'Verdana'; 
+  src: url('Verdana-regular.woff2') format('woff2'), 
+       url('Verdana-regular.ttf')  format('truetype'), 
+       url('Verdana-regular.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'Verdana'; 
+  src: url('Verdana-bold.woff2') format('woff2'), 
+       url('Verdana-bold.ttf')  format('truetype'), 
+       url('Verdana-bold.woff') format('woff'); 
+  font-weight: bold; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'Verdana'; 
+  src: url('Verdana-italic.woff2') format('woff2'), 
+       url('Verdana-italic.ttf')  format('truetype'), 
+       url('Verdana-italic.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: italic; 
+}
+@font-face { 
+  font-family: 'Open Sans'; 
+  src: url('OpenSans-Regular.woff2') format('woff2'), 
+       url('OpenSans-Regular.ttf')  format('truetype'), 
+       url('OpenSans-Regular.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'Open Sans'; 
+  src: url('OpenSans-SemiBold.woff2') format('woff2'), 
+       url('OpenSans-SemiBold.ttf')  format('truetype'), 
+       url('OpenSans-SemiBold.woff') format('woff'); 
+  font-weight: bold; 
+  font-style: normal; 
+}
