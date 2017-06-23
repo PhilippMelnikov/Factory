@@ -368,6 +368,7 @@ header {
 }
 /*-------------- plant --------------*/
 .plant {
+  position: relative;
   padding: 35px 0 0;
   background: #fff;
 }
@@ -453,7 +454,7 @@ header {
 }
 /*-------------- reviews --------------*/
 .reviews {
-  padding: 34px 75px 40px;
+  padding: 34px 15px 40px;
   background: #f4f6f8;
   margin-top: 34px;
 }
@@ -709,18 +710,43 @@ footer {
 .gallery-top {
   height: 340px;
   width: 100%;
+  z-index: 10;
+  margin-top: -60px;
 }
 .gallery-thumbs {
-  height: 235px;
+  height: 305px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 0;
+  padding: 10px 0 80px;
+  margin-bottom: 10px;
+  z-index: 100;
+}
+.gallery-thumbs .swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0px, 0px) !important;
+          transform: translate3d(0px, 0px, 0px) !important;
 }
 .gallery-thumbs .swiper-slide {
+  position: relative;
   width: 25%;
   height: 100%;
-  opacity: 0.4;
 }
-.gallery-thumbs .swiper-slide-active {
-  opacity: 1;
+.gallery-thumbs .swiper-slide img {
+  width: 100%;
+}
+.gallery-thumbs .swiper-slide-active:after {
+  z-index: 100;
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 30px 30px 0px 30px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+.reviews-container {
+  display: table;
+  margin: 0 auto;
 }

@@ -30,13 +30,22 @@ $(document).ready(function() {
         spaceBetween: 10,
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 10,
+        slidesPerView: 4,
         centeredSlides: true,
-        slidesPerView: 'auto',
         touchRatio: 0.2,
         slideToClickedSlide: true
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
 
+    var reviewSwiper = new Swiper('.reviews-slider', {
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 0,
+      autoplay: 2500,
+      autoplayDisableOnInteraction: false,
+      slidesPerView: 1,
+      centeredSlides: true,
+      loop: true
+    });
 })
