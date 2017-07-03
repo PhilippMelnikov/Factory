@@ -9,14 +9,15 @@
 	<link rel="shortcut icon" href="">
 
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
-
+	<!-- Up Button -->
+	<div class="up-button">наверх</div>
+	<!-- Up Button -->
 	<header>
 		<div class="wrap h-top">
 			<a href="./index.html" class="h-logo">
@@ -36,21 +37,76 @@
 						</form>
 					</div>
 
-					<ul>
-						<li class="info-menu-drop">
-							<a href="#0" class="info-buy-link link-arrow">ГДЕ КУПИТЬ</a>
-							<!--<ul class="info-menu-list">
-								<li>
-									<ul class="info-buy-item">
+					<ul class="menu-list">
+
+						<li class="info-menu-drop menu-item">
+							<a href="#" class="menu-link info-buy-link link-arrow">ГДЕ КУПИТЬ</a>
+
+							<ul class="menu-list-in menu-drop-buy">
+								<li class="info-buy-item">
+									<h6>Центральный офис:</h6>
+									<div  class="list-office-address">
+										<p>г. Ульяновск,</p>
+										<p>пр-д Нефтяников, 2Б</p>
+									</div>
+									<ul class="office-phone-list">
+										<li>+7 (8422) 35-41-41</li>
+										<li>+7 (8422) 35-45-45</li>
+										<li>+7 (8422) 35-47-47</li>
+										<li>+7 (8422) 35-48-48</li>
+									</ul>
+								</li>
+								<li class="info-buy-item">
+									<h6>Дополнительный офис:</h6>
+									<div  class="list-office-address">
+										<p>г. Ульяновск,</p>
+										<p>ул. К.Маркса, 50, офис 8</p>
+									</div>
+									<ul class="office-phone-list">
+										<li>+7(8422) 44-79-79</li>
+										<li>+7 (8422) 44-71-71</li>
+									</ul>
+								</li>
+								<li class="info-buy-item">
+									<h6>Дополнительный офис:</h6>
+									<div  class="list-office-address">
+										<p>г. Ульяновск,</p>
+										<p>ул. Врача Михайлова, д.51, офис № 203</p>
+									</div>
+									<ul class="office-phone-list">
+										<li>+7 (8422) 55-22-00</li>
+										<li>+7 (8422) 52-00-44</li>
+									</ul>
+								</li>
+								<li class="info-buy-item">
+									<h6>Дополнительный офис:</h6>
+									<div  class="list-office-address">
+										<p>г. Ульяновск,</p>
+										<p>пр. Нариманова, д.103</p>
+									</div>
+									<ul class="office-phone-list">
+										<li>+7 (8422) 35-44-99</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</li>
+
+						<li class="info-menu-drop menu-item">
+							<a href="#" class="menu-link info-prod-link link-arrow">ПРОДУКЦИЯ</a>
+
+							<ul class="menu-list-in menu-drop-prod">
+								<li class="info-prod-item">
+									<ul>
 										<li><a href="#">Профнастил</a>
 										<li><a href="#">Металлочерепица</a>
 										<li><a href="#">Сайдинг маталлический</a>
-										<li>Сайдинг “Блок-Хаус”</a>
+										<li><a href="#">Сайдинг “Блок-Хаус”</a>
 										<li><a href="#">Я - фасад “Крымский сланец”</a>
 									</ul>
 								</li>
-								<li>
-									<ul class="info-buy-item">
+								<li class="info-prod-item">
+									<ul>
 										<li><a href="#">Гладкий лист</a>
 										<li><a href="#">Доборные элементы</a>
 										<li><a href="#">Металлический штакетник</a>
@@ -58,8 +114,8 @@
 										<li><a href="#">Обрешеточный профиль  ОП-40</a>
 									</ul>
 								</li>
-								<li>
-									<ul class="info-buy-item">
+								<li class="info-prod-item">
+									<ul>
 										<li><a href="#">Сетка просечно-вытяжная</a>
 										<li><a href="#">Рулонная сталь</a>
 										<li><a href="#">Водосточные системы</a>
@@ -67,14 +123,13 @@
 										<li><a href="#">Прочие изделия</a>
 									</ul>
 								</li>
-							</ul>-->
+							</ul>
 							<div class="clearfix"></div>
-						</li>
-						<li class="info-menu-drop">
-							<a href="#0" class="info-prod-link link-arrow">ПРОДУКЦИЯ</a>
 						</li>
 					</ul>
 				</div>
+			  </div>
+			  <div class="clearfix"></div>
 
 			</div>
 			<div class="clearfix"></div>
@@ -93,55 +148,214 @@
 		<div class="h-line"></div>
 
 		<div class="wrap h-menu">
-			<menu class="main-menu-list">
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Дилерам</a></li>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Партнеры</a></li>
+			<menu class="main-menu-list menu-list">
+				<li class="menu-item">
+					<a class="main-menu-link menu-link link-arrow" href="#">О компании</a>
+					<ul class="menu-list-in menu-drop-buy main-drop-menu">
+						<li class="col-2">
+							<ul>
+								<li><a href="#">История</a></li>
+								<li><a href="#">Производство</a></li>
+								<li><a href="#">Социальная ответственность</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Наши объекты</a></li>
+							</ul>
+						</li>
+						<li class="col-2">
+							<ul>
+								<li><a href="#">Репутация</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</li>
+				<li class="menu-item">
+					<a class="main-menu-link menu-link link-arrow" href="#">Продукция</a>
+					<ul class="menu-list-in menu-drop-buy main-drop-menu">
+						<li class="col-3">
+							<ul>
+								<li><a href="#">Профнастил</a></li>
+								<li><a href="#">Металочерепица</a></li>
+								<li><a href="#">Сайдинг металический</a></li>
+								<li><a href="#">Сайдинг "БЛОК-ХАУС"</a></li>
+								<li><a href="#">Я - фасад "Крымский сланец"</a></li>
+							</ul>
+						</li>
+						<li class="col-3">
+							<ul>
+								<li><a href="#">Гладкий лист</a></li>
+								<li><a href="#">Доборные элементы</a></li>
+								<li><a href="#">Металлический штакетник</a></li>
+								<li><a href="#">Профили для монтажа ГВЛ</a></li>
+								<li><a href="#">Обрешеточный профиль ОП-40</a></li>
+							</ul>
+						</li>
+						<li class="col-3">
+							<ul>
+								<li><a href="#">Сетка просечно - вытяжная</a></li>
+								<li><a href="#">Рулонная сталь</a></li>
+								<li><a href="#">Водосточная система</a></li>
+								<li><a href="#">Лист профилированный поликарбонатный</a></li>
+								<li><a href="#">Прочие изделия</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</li>
+				<li class="menu-item">
+					<a class="main-menu-link menu-link link-arrow" href="#">Услуги</a>
+					<ul class="menu-list-in menu-drop-buy main-drop-menu">
+						<li><a href="#">Защитная пленка</a></li>
+						<li><a href="#">Резка металла</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Расчет и консультация</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</li>
+				<li class="menu-item">
+					<a class="main-menu-link menu-link link-arrow" href="#">Информация</a>
+					<ul class="menu-list-in menu-drop-buy main-drop-menu">
+						<li><a href="#">ГОСТ</a></li>
+						<li><a href="#">Консультация и рассчет материалов</a></li>
+						<li><a href="#">Памятка покупвтелю</a></li>
+						<li><a href="#">Расчет Ж/Д тарифа</a></li>
+						<li><a href="#">Сертификаты</a></li>
+					</ul>
+				</li>
+				<li><a class="main-menu-link" href="#">Дилерам</a></li>
+				<li class="menu-item">
+					<a class="main-menu-link menu-link link-arrow" href="#">Партнеры</a>
+					<ul class="menu-list-in menu-drop-buy main-drop-menu partners-drop-menu">
+						<li class="col-3">
+							<ul>
+								<li><a href="http://www.duckanddog.ru/" target="_blank">Duck and Dog</a></li>
+								<li><a href="http://www.teplostroy.org/" target="_blank">ГК "ТеплоСтрой"</a></li>
+								<li><a href="http://www.usadba73.ru/" target="_blank">Жилой комплекс "Городская усадьба"</a></li>
+								<li><a href="http://www.roofsystems.ru/" target="_blank">Компания "ROOFSYSTEMS"</a></li>
+								<li><a href="http://www.ozero73.ru/" target="_blank">Коттеджный поселок "Белобяжье"</a></li>
+							</ul>
+						</li>
+						<li class="col-3">
+							<ul>
+								<li><a href="http://www.mmk.ru/" target="_blank">ОАО "ММК"</a></li>
+								<li><a href="http://www.nlmk.ru/" target="_blank">ОАО "НЛМК"</a></li>
+								<li><a href="http://www.severstal.ru/" target="_blank">ОАО "Северсталь"</a></li>
+								<li><a href="http://www.drevprom73.ru" target="_blank">ООО "Древпром"</a></li>
+								<li><a href="http://www.fakro.ru/" target="_blank">ООО "ФАКРО-Р"</a></li>
+							</ul>
+						</li>
+						<li class="col-3">
+							<ul>
+								<li><a href="http://www.polinsky.ru/" target="_blank">Полинский и партнеры</a></li>
+								<li><a href="http://www.rsdom73.ru" target="_blank">СТРОИТЕЛЬНАЯ КОМПАНИЯ РОССТРОЙ</a></li>
+								<li><a href="http://www.gexa.ru/" target="_blank">ТД Гекса-Поволжье</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</li>
+				<li class="menu-item">
+					<a class="main-menu-link menu-link link-arrow" href="#">Контакты</a>
+					<ul class="menu-list-in menu-drop-buy contact-drop-menu">
+						<li class="col-2 contact-info-list">
+							<h6>Центральный офис:</h6>
+							<div  class="list-office-address">
+								<p>г. Ульяновск, пр-д Нефтяников, 2Б</p>
+							</div>
+							<ul class="office-phone-list">
+								<li>+7 (8422) 35-41-41</li>
+								<li>+7 (8422) 35-45-45</li>
+								<li>+7 (8422) 35-47-47</li>
+								<li>+7 (8422) 35-48-48</li>
+							</ul>
+							<ul class="office-email-list">
+								<li><a href="mailto:office@zavod-ksp.ru">office@zavod-ksp.ru</a> <span>- предложения о сотрудничестве</span></li>
+								<li><a href="mailto:info@zavod-ksp.ru">info@zavod-ksp.ru</a> <span>- администрация</span></li>
+								<li><a href="mailto:reklama@zavod-ksp.ru">reklama@zavod-ksp.ru</a> <span>- отдел рекламы</span></li>
+							</ul>
+							<hr>
+							<h6>Отдел по работе с юридическими лицами:</h6>
+							<ul class="office-phone-list">
+								<li>(8422) 35-47-47</li>
+							</ul>
+							<ul class="office-email-list">
+								<li><a href="mailto:market@zavod-ksp.ru">market@zavod-ksp.ru</a></li>
+								<li><a href="mailto:zavod@zavod-ksp.ru">zavod@zavod-ksp.ru</a></li>
+								<li><a href="mailto:post@zavod-ksp.ru">post@zavod-ksp.ru</a></li>
+							</ul>
+						</li>
+						<li class="col-2 contact-info-list">
+							<h6>Дополнительный офис:</h6>
+							<div  class="list-office-address">
+								<p>г. Ульяновск, ул. К.Маркса, 50, офис 8</p>
+							</div>
+							<ul class="office-phone-list">
+								<li>+7(8422) 44-79-79</li>
+								<li>+7 (8422) 44-71-71</li>
+							</ul>
+							<div  class="list-office-address">
+								<p>г. Ульяновск, ул. Врача Михайлова, д.51, офис № 203</p>
+							</div>
+							<ul class="office-phone-list">
+								<li>+7 (8422) 55-22-00</li>
+								<li>+7 (8422) 52-00-44</li>
+							</ul>
+							<div  class="list-office-address">
+								<p>г. Ульяновск, пр. Нариманова, д.103</p>
+							</div>
+							<ul class="office-phone-list">
+								<li>+7 (8422) 35-44-99</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</li>
 			</menu>
 		</div>
 	</header>
 
+<!-- Added by me begin-->
 	<section class="top-swiper-section">
 
 		<div class="swiper-container top-swiper">
-
 			<div class="swiper-wrapper">
 
-				<div class="swiper-slide">
-					<div class="banner-slide">
-						<div class="banner-caption">
-							<h2>ПРОИЗВОДИТЕЛЬ №1</h2>
-							<p>по объему отгружаемой продукции по Ульяновской области на 2016г</p>
-							<a href="#" class="learn-more-btn">
-								УЗНАТЬ ПОДРОБНЕЕ
-							</a>
-						</div>
-					</div>
+				<div class="swiper-slide banner-slide">
+							<img class="banner-image" src="img/jpeg/main-banner.jpg" alt="top-banner">
+
+							<div class="banner-caption">
+								<a href="#" class="learn-more-btn">
+									УЗНАТЬ ПОДРОБНЕЕ
+								</a>
+							</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="banner-slide">
-						<div class="banner-caption">
-							<h2>ПРОИЗВОДИТЕЛЬ №1</h2>
-							<p>по объему отгружаемой продукции по Ульяновской области на 2016г</p>
-							<a href="#" class="learn-more-btn">
-								УЗНАТЬ ПОДРОБНЕЕ
-							</a>
-						</div>
-					</div>
+				<div class="swiper-slide banner-slide">
+							<img class="banner-image" src="img/jpeg/main-banner.jpg" alt="top-banner">
+
+							<div class="banner-caption">
+								<a href="#" class="learn-more-btn">
+									УЗНАТЬ ПОДРОБНЕЕ
+								</a>
+							</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="banner-slide">
-						<div class="banner-caption">
-							<h2>ПРОИЗВОДИТЕЛЬ №1</h2>
-							<p>по объему отгружаемой продукции по Ульяновской области на 2016г</p>
-							<a href="#" class="learn-more-btn">
-								УЗНАТЬ ПОДРОБНЕЕ
-							</a>
-						</div>
-					</div>
+				<div class="swiper-slide banner-slide">
+							<img class="banner-image" src="img/jpeg/main-banner.jpg" alt="top-banner">
+
+							<div class="banner-caption">
+								<a href="#" class="learn-more-btn">
+									УЗНАТЬ ПОДРОБНЕЕ
+								</a>
+							</div>
+				</div>
+				<div class="swiper-slide banner-slide">
+							<img class="banner-image" src="img/jpeg/main-banner.jpg" alt="top-banner">
+
+							<div class="banner-caption">
+								<a href="#" class="learn-more-btn">
+									УЗНАТЬ ПОДРОБНЕЕ
+								</a>
+							</div>
 				</div>
 			</div>
 
@@ -150,6 +364,7 @@
 		</div>
 
 	</section>
+	<!-- Added by me end-->
 
 	<section class="main-title">
 		<div class="wrap">
@@ -185,62 +400,183 @@
 			<section class="plant">
 				<h3>Завод ксп это-</h3>
 
+				<!-- Added by me begin-->
 				<!-- Swiper -->
-
-				<div class="swiper-container  gallery-thumbs">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="http://lorempixel.com/1200/1200/nature/1" alt="">
+				<div class="gallery-thumbs">
+						<div class="plant-is-switcher plant-is-switcher-active" data-index="-1">
+							<img src="img/jpeg/GalleryImages/colored-metal-blocks.jpg" alt="">
 						</div>
-						<div class="swiper-slide">
-							<img src="http://lorempixel.com/1200/1200/nature/2" alt="">
+						<div class="plant-is-switcher" data-index="-2">
+							<img src="img/jpeg/GalleryImages/metal-block-min.jpg" alt="">
 						</div>
-						<div class="swiper-slide">
-							<img src="http://lorempixel.com/1200/1200/nature/3" alt="">
+						<div class="plant-is-switcher" data-index="-3">
+							<img src="img/jpeg/GalleryImages/building.jpg" alt="">
 						</div>
-						<div class="swiper-slide">
-							<img src="img/metal-block-min.png" alt="">
+						<div class="plant-is-switcher" data-index="-4">
+							<img src="img/jpeg/GalleryImages/cars.jpg" alt="">
 						</div>
-					</div>
-				</div>
-				<div class="swiper-container gallery-top">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="http://lorempixel.com/1200/1200/nature/1" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img src="http://lorempixel.com/1200/1200/nature/2" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img src="http://lorempixel.com/1200/1200/nature/3" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img src="img/metal-block.png" alt="">
-						</div>
-					</div>
-					<!-- Add Arrows -->
-					<div class="swiper-button-next swiper-button-white"></div>
-					<div class="swiper-button-prev swiper-button-white"></div>
 				</div>
 
-				<div class="plant-marking">
-					<h5>Маркировка продукции. Мы несем ответственность за качество нашей продукции.</h5>
-					<div class="marking-block">
-						<p>В апреле 2014 года Завод Кровельных и Стеновых Профилей во избежание подделок металлопродукции приступил к нанесению лазерной маркировки на свою продукцию.</p>
-						<p>Мы несем ответственность за качество нашей продукции!</p>
+				<div class="plant-is-content active" id="data-index-1">
+					<div class="swiper-container gallery-top" id="gallery-top-1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/1" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/2" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/3" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/jpeg/metal-block.jpeg" alt="">
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
 					</div>
-					<div class="marking-block">
-						<p class="marking-title">Маркировка состоит из нескольких составных частей:</p>
-						<ol>
-							<li>логотип Завода Кровельных и Стеновых Профилей,</li>
-							<li>наименование прозводителя "Завод КСП"</li>
-							<li>региональная принадлежность"Ульяновск"</li>
-							<li>адрес сайта : www.zavod-ksp.ru</li>
-						</ol>
+
+					<div class="plant-marking">
+						<h5>Маркировка продукции. Мы несем ответственность за качество нашей продукции.</h5>
+						<div class="marking-block">
+							<p>В апреле 2014 года Завод Кровельных и Стеновых Профилей во избежание подделок металлопродукции приступил к нанесению лазерной маркировки на свою продукцию.</p>
+							<p>Мы несем ответственность за качество нашей продукции!</p>
+						</div>
+						<div class="marking-block">
+							<p class="marking-title">Маркировка состоит из нескольких составных частей:</p>
+							<ol>
+								<li>логотип Завода Кровельных и Стеновых Профилей,</li>
+								<li>наименование прозводителя "Завод КСП"</li>
+								<li>региональная принадлежность"Ульяновск"</li>
+								<li>адрес сайта : www.zavod-ksp.ru</li>
+							</ol>
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="clearfix"></div>
 				</div>
 
+				<div class="plant-is-content" id="data-index-2">
+					<div class="swiper-container gallery-top" id="gallery-top-2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/jpeg/GalleryImages/metal-block.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/2" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/1" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/3" alt="">
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
+					</div>
+
+					<div class="plant-marking">
+						<h5>Лучшая продукция на рынке по лучшей цене</h5>
+						<div class="marking-block">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit qui modi error laborum iure, iusto fugit adipisci voluptate consequatur tenetur. Ut dolor ullam facilis voluptatum eos, ab quaerat voluptas quisquam.</p>
+							<p>Мы несем ответственность за качество нашей продукции!</p>
+						</div>
+						<div class="marking-block">
+							<p class="marking-title">Маркировка состоит из нескольких составных частей:</p>
+							<ol>
+								<li>логотип Завода Кровельных и Стеновых Профилей,</li>
+								<li>lorem</li>
+								<li>региональная принадлежность"Ульяновск"</li>
+								<li>адрес сайта : www.zavod-ksp.ru</li>
+							</ol>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+				<div class="plant-is-content" id="data-index-3">
+					<div class="swiper-container gallery-top" id="gallery-top-3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/3" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/1" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/2" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/jpeg/GalleryImages/metal-block.jpg" alt="">
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
+					</div>
+
+					<div class="plant-marking">
+						<h5>Маркировка продукции. Мы несем ответственность за качество нашей продукции.</h5>
+						<div class="marking-block">
+							<p>В апреле 2014 года Завод Кровельных и Стеновых Профилей во избежание подделок металлопродукции приступил к нанесению лазерной маркировки на свою продукцию.</p>
+							<p>Мы несем ответственность за качество нашей продукции!</p>
+						</div>
+						<div class="marking-block">
+							<p class="marking-title">Маркировка состоит из нескольких составных частей:</p>
+							<ol>
+								<li>логотип Завода Кровельных и Стеновых Профилей,</li>
+								<li>наименование прозводителя "Завод КСП"</li>
+								<li>региональная принадлежность"Ульяновск"</li>
+								<li>адрес сайта : www.zavod-ksp.ru</li>
+							</ol>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+				<div class="plant-is-content" id="data-index-4">
+					<div class="swiper-container gallery-top" id="gallery-top-4">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/4" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/metal-block.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/2" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="http://lorempixel.com/1200/1200/nature/3" alt="">
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
+					</div>
+
+					<div class="plant-marking">
+						<h5>Маркировка продукции. Мы несем ответственность за качество нашей продукции.</h5>
+						<div class="marking-block">
+							<p>В апреле 2014 года Завод Кровельных и Стеновых Профилей во избежание подделок металлопродукции приступил к нанесению лазерной маркировки на свою продукцию.</p>
+							<p>Мы несем ответственность за качество нашей продукции!</p>
+						</div>
+						<div class="marking-block">
+							<p class="marking-title">Маркировка состоит из нескольких составных частей:</p>
+							<ol>
+								<li>логотип Завода Кровельных и Стеновых Профилей,</li>
+								<li>наименование прозводителя "Завод КСП"</li>
+								<li>региональная принадлежность"Ульяновск"</li>
+								<li>адрес сайта : www.zavod-ksp.ru</li>
+							</ol>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+		<!-- Added by me end-->
 			</section>
 
 			<a href="#" class="btn-youtube">
@@ -252,24 +588,33 @@
 
 			<section class="reviews">
 				<h3>Отзывы наших клиентов</h3>
-
+				<!-- Added by me begin-->
 				<!-- Reviews Slider -->
 				<div class="swiper-container reviews-slider">
 					<div class="swiper-wrapper">
+
+						<!-- Маска для аватарак в отзыве -->
+						<svg class="reviews-mask">
+						  <defs>
+						    <clipPath id="clipping">
+						      <polygon points="40,0 80,23 80,71 40,95 0,71 0,23"/>
+						    </clipPath>
+						  </defs>
+						</svg>
+
 						<div class="swiper-slide">
 							<div class="reviews-container">
 								<div class="reviews-block">
 									<div class="reviews-img">
-										<img src="img/reviews-img-1.png" alt="">
+										<img src="img/reviews-img-2.jpg" alt="">
 									</div>
 									<p class="info-people">Александр, ООО “Фирма”</p>
 									<p class="reviews-text">Долго выбирали материал на крышу. Крыша сложная, не могли сами посчитать. На заводе нам сделали полный расчет, причем предложили все дополнительные элементы, о которых мы даже и не подумали бы сразу. Пришлось бы докупать. В итоге, на третий день
 										приехал полный заказ. Привезли все одной машиной. Очень удобно. Сэкономили и время и на дополнительных доставках.</p>
 								</div>
-
 								<div class="reviews-block">
 									<div class="reviews-img">
-										<img src="img/reviews-img-2.png" alt="">
+										<img src="img/reviews-img-1.jpg" alt="">
 									</div>
 									<p class="info-people">Александр, ООО “Фирма”</p>
 									<p class="reviews-text">Долго выбирали материал на крышу. Крыша сложная, не могли сами посчитать. На заводе нам сделали полный расчет, причем предложили все дополнительные элементы, о которых мы даже и не подумали бы сразу. Пришлось бы докупать. В итоге, на третий день
@@ -281,7 +626,7 @@
 							<div class="reviews-container">
 								<div class="reviews-block">
 									<div class="reviews-img">
-										<img src="img/reviews-img-1.png" alt="">
+										<img src="img/reviews-img-1.jpg" alt="">
 									</div>
 									<p class="info-people">Александр, ООО “Фирма”</p>
 									<p class="reviews-text">Долго выбирали материал на крышу. Крыша сложная, не могли сами посчитать. На заводе нам сделали полный расчет, причем предложили все дополнительные элементы, о которых мы даже и не подумали бы сразу. Пришлось бы докупать. В итоге, на третий день
@@ -290,7 +635,7 @@
 
 								<div class="reviews-block">
 									<div class="reviews-img">
-										<img src="img/reviews-img-2.png" alt="">
+										<img src="img/reviews-img-2.jpg" alt="">
 									</div>
 									<p class="info-people">Александр, ООО “Фирма”</p>
 									<p class="reviews-text">Долго выбирали материал на крышу. Крыша сложная, не могли сами посчитать. На заводе нам сделали полный расчет, причем предложили все дополнительные элементы, о которых мы даже и не подумали бы сразу. Пришлось бы докупать. В итоге, на третий день
@@ -303,6 +648,7 @@
 					<div class="swiper-button-next swiper-button-black"></div>
 					<div class="swiper-button-prev swiper-button-black"></div>
 				</div>
+				<!-- Added by me end-->
 				<div class="clearfix"></div>
 				<a href="#" class="btn-reviews">Показать еще</a>
 			</section>
@@ -312,8 +658,122 @@
 
 	<section class="offices">
 		<div class="wrap">
-
+			<ul class="btn-offices-list">
+				<li class="btn-offices-item">
+					<a href="#" data-results="first" class="btn-offices-link active">
+						<h6>Центральный офис</h6>
+						<p>Киндяковка</p>
+					</a>
+				</li>
+				<li class="btn-offices-item">
+					<a href="#" data-results="second" class="btn-offices-link">
+						<h6>Дополнительный офис</h6>
+						<p>Центр</p>
+					</a>
+				</li>
+				<li class="btn-offices-item">
+					<a href="#" data-results="thirt" class="btn-offices-link">
+						<h6>Дополнительный офис</h6>
+						<p>Заволжье</p>
+					</a>
+				</li>
+				<li class="btn-offices-item">
+					<a href="#" data-results="fourth" class="btn-offices-link">
+						<h6>Дополнительный офис</h6>
+						<p>Север</p>
+					</a>
+				</li>
+			</ul>
+			<div class="clearfix"></div>
 		</div>
+
+		<div class="offices-map">
+		  <div class="wrap offices-map-pos">
+
+			<div class="offices-location results-item-first active">
+				<div class="offices-location-img">
+					<img src="img/office-img-1.jpg" alt="">
+				</div>
+
+				<div class="offices-location-address">
+					<h4>Центральный офис:</h4>
+
+					<div  class="address-name">
+						<p>г. Ульяновск,</p>
+						<p>пр-д Нефтяников, 2Б</p>
+					</div>
+					<ul class="address-phone-list">
+						<li>+7 (8422) 35-41-41</li>
+						<li>+7 (8422) 35-45-45</li>
+						<li>+7 (8422) 35-47-47</li>
+						<li>+7 (8422) 35-48-48</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="offices-location results-item-second">
+				<div class="offices-location-img">
+					<img src="img/office-img-1.jpg" alt="">
+				</div>
+
+				<div class="offices-location-address">
+					<h4>Дополнительный офис:</h4>
+
+					<div  class="address-name">
+						<p>г. Ульяновск,</p>
+						<p>ул. К.Маркса, 50, офис 8</p>
+					</div>
+					<ul class="address-phone-list">
+						<li>+7(8422) 44-79-79</li>
+						<li>+7 (8422) 44-71-71</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="offices-location results-item-thirt">
+				<div class="offices-location-img">
+					<img src="img/office-img-1.jpg" alt="">
+				</div>
+
+				<div class="offices-location-address">
+					<h4>Дополнительный офис:</h4>
+
+					<div  class="address-name">
+						<p>г. Ульяновск,</p>
+						<p>ул. Врача Михайлова, д.51, офис № 203</p>
+					</div>
+					<ul class="address-phone-list">
+						<li>+7 (8422) 55-22-00</li>
+						<li>+7 (8422) 52-00-44</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="offices-location results-item-fourth">
+				<div class="offices-location-img">
+					<img src="img/office-img-1.jpg" alt="">
+				</div>
+
+				<div class="offices-location-address">
+					<h4>Дополнительный офис:</h4>
+
+					<div  class="address-name">
+						<p>г. Ульяновск,</p>
+						<p>пр. Нариманова, д.103</p>
+					</div>
+					<ul class="address-phone-list">
+						<li>+7 (8422) 35-44-99</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+		  </div>
+		</div>
+
 	</section>
 
 	<footer>
@@ -388,18 +848,15 @@
 				<div class="flex-wrap">
 					<div class="f-copyr">© 2017 Zavod - KSP</div>
 					<div class="f-social">
-						<a class="social-vk soc"></a>
-						<a class="social-youtube soc"></a>
-						<a class="social-mail soc"></a>
+						<a href="#" class="social-vk soc"></a>
+						<a href="#" class="social-youtube soc"></a>
+						<a href="#" class="social-mail soc"></a>
 					</div>
-					<a class="f-develop">Разработка сайта</a>
+					<a href="#" class="f-develop">Разработка сайта</a>
 				</div>
 			</div>
 		</section>
 	</footer>
-
-
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 
 	<script type="text/javascript" src="js/libs.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
