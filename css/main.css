@@ -341,7 +341,6 @@ header {
   left: 0 !important;
   font-size: 14px;
   font-weight: 100;
-  padding-bottom: 8px;
 }
 .main-menu-list .menu-list-in a {
   padding: 12px 0 12px 30px;
@@ -364,9 +363,6 @@ header {
 .col-3 {
   float: left;
   width: 33.33%;
-}
-.main-drop-menu {
-  padding-bottom: 8px;
 }
 .partners-drop-menu li a:hover {
   color: #0b7fb7 !important;

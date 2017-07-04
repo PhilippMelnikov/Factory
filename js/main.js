@@ -74,6 +74,25 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
+  // функция, которая задает группе колонок одинаковую высоту
+  function setEqualHeight(columns) {
+
+    var tallestcolumn = 0;
+
+    columns.each(function(i, el) {
+        currentHeight = $(el).height();
+
+        if(currentHeight > tallestcolumn) {
+          tallestcolumn = currentHeight;
+        }
+      }
+
+    );
+
+    columns.height(tallestcolumn);
+  }
+
+  //Выравнивание по высоте блоков в braces-types
 
 //выпадающее меню info-menu-drop
    $('.menu-link').on('click', function (e) {
@@ -93,6 +112,7 @@ $(document).ready(function() {
 
       otherContent.stop(true, true).slideUp(duration);
       content.stop(true, true).slideDown(duration);
+      setEqualHeight(content.find("li[class*='col']"));
     } else {
       $this.delay(duration).queue(function () {
          $(this).removeClass('active');
@@ -100,6 +120,7 @@ $(document).ready(function() {
        });
 
       content.stop(true, true).slideUp(duration);
+      setEqualHeight(content.find("li[class*='col']"));
     }
     var currentMenu = $this;
     $(window).click(function() {
@@ -136,40 +157,16 @@ $(document).ready(function() {
          .removeClass('active');
   });
 
+  var   infoBuyItemH6 = $(".info-buy-item>h6"),
+        officeAddress = $(".list-office-address"),
+        officePhone = $(".office-phone-list");
 
-      // функция, которая задает группе колонок одинаковую высоту
-      function setEqualHeight(columns) {
-
-        var tallestcolumn = 0;
-
-        columns.each(
-
-          function() {
-            currentHeight = $(this).height();
-
-            if(currentHeight > tallestcolumn) {
-              tallestcolumn = currentHeight;
-            }
-          }
-
-        );
-
-        columns.height(tallestcolumn);
-      }
-
-      //Выравнивание по высоте блоков в braces-types
-
+    // setEqualHeight(infoBuyItemH6);
+    // setEqualHeight(officeAddress);
+    // setEqualHeight(officePhone);
 });
 
-var   infoBuyItemH6 = $(".info-buy-item>h6"),
-      officeAddress = $(".list-office-address"),
-      productsCol = $('.prod-col');
-      officePhone = $(".office-phone-list");
 
-  setEqualHeight(infoBuyItemH6);
-  setEqualHeight(officeAddress);
-  setEqualHeight(officePhone);
-  setEqualHeight(productsCol);
 
  $(document).mouseup(function (e){
 
