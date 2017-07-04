@@ -163,11 +163,13 @@ $(document).ready(function() {
 
 var   infoBuyItemH6 = $(".info-buy-item>h6"),
       officeAddress = $(".list-office-address"),
+      productsCol = $('.prod-col');
       officePhone = $(".office-phone-list");
 
   setEqualHeight(infoBuyItemH6);
   setEqualHeight(officeAddress);
   setEqualHeight(officePhone);
+  setEqualHeight(productsCol);
 
  $(document).mouseup(function (e){
 

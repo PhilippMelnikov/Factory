@@ -118,6 +118,7 @@ header {
   float: left;
   padding-bottom: 8px;
   width: 33.3%;
+  min-height: 196px;
   font-size: 14px;
 }
 .info-prod-item ul {
