@@ -171,7 +171,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.menu-list-in').hover(function(e) {
+  $('.main-drop-menu').hover(function(e) {
     e.stopPropagation();
   }, function() {
     var mainMenuLink = $(this).siblings(".menu-link");
@@ -183,7 +183,7 @@ $(document).ready(function() {
     }
   })
   // Нижние выпадающие меню конец
-  
+
   //offices-map
   $('.btn-offices-link').click(function(e) {
     e.preventDefault();
